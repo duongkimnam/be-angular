@@ -7,8 +7,8 @@ mongoose.connect('mongodb+srv://duongkimnam2142002:ykjNnG4DVrN5f5uQ@cluster0.8yf
   .catch(err => console.error(err));
 
 const caseSchema = new mongoose.Schema({
-  title: { type: String, unique: true },
-  case_id: { type: String, unique: true },
+    title: String,
+    case_id: String,
     department: String,
     type: String,
     description: String,
